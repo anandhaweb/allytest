@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - npm install
+  build:
+    commands:
+       - npm run build --  --no-aot --configuration staging
+artifacts:
+  files:
+    - 'dist/**/*'
+    - 'appspec.yml'
+    - 'aws_scripts/**/*'

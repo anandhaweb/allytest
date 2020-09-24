@@ -1,0 +1,31 @@
+@import "../../../../variable.scss";
+
+button {
+  background: none;
+  padding: 5px 20px;
+  box-shadow: none;
+  border: none;
+  line-height: 21px;
+  text-align: center;
+  border-radius: 3px;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  &:focus {
+    outline:0;
+  }
+
+  &.primary {
+    color: $white;
+    border: 1px $blue;
+
+    &:disabled {
+      background: rgba(47, 128, 237, 0.15);
+      color: $white;
+      cursor: no-drop;
+    }
+  }
+
+}
+
+
